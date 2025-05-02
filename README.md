@@ -1,5 +1,5 @@
 # 🌱 IBM SMS Farming Academy  
-**IBM Granite Hackathon 2025 Submission** | [Watch Video Demo](#video-demo)
+**IBM Granite Hackathon 2025 Submission** | [Watch Video Demo](#video-demo) |
 *Empowering Smallholder Farmers via SMS with IBM Granite AI Models*  
 
 [![IBM Watsonx](https://img.shields.io/badge/Powered%20by-IBM%20Granite-052FAD)](https://www.ibm.com/products/watsonx)  
