@@ -1,0 +1,17 @@
+2025-04-28 07:43:51,851 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-28 07:43:51,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-28 07:43:51,986 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 07:43:54,640 - werkzeug - WARNING -  * Debugger is active!
+2025-04-28 07:43:54,711 - werkzeug - INFO -  * Debugger PIN: 559-089-967
+2025-04-28 07:45:09,240 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 07:45:09] "GET / HTTP/1.1" 200 -
+2025-04-28 07:45:09,419 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 07:45:09] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+2025-04-28 07:45:09,552 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 07:45:09] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+2025-04-28 07:45:11,758 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 07:45:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-28 07:50:11,684 - werkzeug - INFO -  * Detected change in 'C:\\Users\\VERNARD\\farming-sms\\app.py', reloading
+2025-04-28 07:50:11,817 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 08:11:30,093 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 08:11:36,547 - werkzeug - WARNING -  * Debugger is active!
+2025-04-28 08:11:36,601 - werkzeug - INFO -  * Debugger PIN: 559-089-967
+2025-04-28 08:16:21,284 - werkzeug - INFO -  * Detected change in 'C:\\Users\\VERNARD\\farming-sms\\app.py', reloading
+2025-04-28 08:16:21,394 - werkzeug - INFO -  * Restarting with stat

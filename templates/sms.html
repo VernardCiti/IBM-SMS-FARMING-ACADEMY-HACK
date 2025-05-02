@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM SMS Farming Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='favicon (1).ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="phone">
+            <div class="phone-header">
+                <div class="phone-status">
+                    <span class="signal">📶</span>
+                    <span class="time" id="current-time">12:00</span>
+                    <span class="battery">🔋 85%</span>
+                </div>
+                <div class="phone-title">
+                    <span>
+                        <img src="{{ url_for('static', filename='favicon (1).ico') }}" alt="IBM" class="ibm-logo-header">
+                        SMS Farming Academy
+                    </span>
+                    <span id="status-indicator">Online</span>
+                </div>
+            </div>
+           
+            <div class="chat-container" id="chat-container">
+                <!-- Messages will appear here -->
+            </div>
+           
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-button" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+           
+            <div class="controls">
+                <div class="connection-status">
+                    <label for="connection-toggle">Connection:</label>
+                    <select id="connection-toggle">
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                        <option value="slow">Slow Network</option>
+                    </select>
+                </div>
+                <div class="phone-number">
+                    <label for="phone-number">Phone:</label>
+                    <input type="text" id="phone-number" value="+254711123456" readonly>
+                </div>
+            </div>
+        </div>
+       
+        <div class="demo-panel">
+            <h2>
+                <img src="{{ url_for('static', filename='favicon (1).ico') }}" alt="IBM" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+                watsonx.ai SMS Farming Academy
+            </h2>
+            <div class="demo-info">
+                <p><strong>IBM Hackathon Entry: Sustainable Agriculture Training Platform</strong></p>
+                <p>This platform provides SMS-based agricultural training to farmers in regions with limited internet connectivity, focusing on sustainable practices and resource efficiency.</p>
+                
+                <p><strong>Instructions:</strong></p>
+                <ul>
+                    <li>Send "<strong>farm</strong>" to start your training journey</li>
+                    <li>Answer quiz questions with "<strong>a</strong>", "<strong>b</strong>", or "<strong>c</strong>"</li>
+                    <li>Text "<strong>certificate</strong>" after completing all lessons</li>
+                    <li>Try "<strong>help</strong>" for assistance or "<strong>topics</strong>" for available lessons</li>
+                    <li>Toggle connection status to simulate different network conditions</li>
+                </ul>
+               
+                <div class="api-status">
+                    <h3>IBM watsonx.ai Integration</h3>
+                    <p>This simulator connects to IBM watsonx.ai using the Granite 13B foundation model:</p>
+                    <ul>
+                        <li><strong>WATSONX_API_KEY</strong> - For accessing IBM Granite 13B model</li>
+                        <li><strong>PROJECT_ID</strong> - For IBM Cloud project access</li>
+                        <li><strong>TOKEN_COST</strong> - For usage tracking (default: 0.0001 USD/token)</li>
+                    </ul>
+                </div>
+               
+                <div class="demo-notes">
+                    <p><strong>SDG Alignment:</strong> This solution addresses Sustainable Development Goals 8.2 (higher economic productivity through technology) and 8.4 (improving resource efficiency in consumption and production).</p>
+                    <p><strong>Blockchain Certificate:</strong> Farmers receive a verifiable IBM Blockchain credential upon completion, which serves as proof of skills for potential employers or farming cooperatives.</p>
+                    <p><strong>Note:</strong> This simulator makes real API calls to IBM watsonx.ai for dynamic content generation. No actual SMS are sent.</p>
+                </div>
+                <div class="clear-history">
+                    <button id="clear-chat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                        Clear Chat History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
